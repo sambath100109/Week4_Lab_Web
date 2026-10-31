@@ -1,0 +1,246 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6fd;
+  color: #101a3d;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #0f1f4a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu p {
+  color: #c9d3ee;
+  padding: 12px 15px;
+  border-radius: 30px;
+}
+
+.menu p.active {
+  background: #2563eb;
+  color: white;
+}
+
+.upgrade-box {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.upgrade-box button {
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar input {
+  flex: 1;
+  max-width: 500px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 12px;
+  background: #e8edf9;
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+  font-size: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card {
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card .icon { font-size: 30px; }
+.card h3    { font-size: 30px; margin: 8px 0; }
+
+.blue   { background: linear-gradient(135deg, #1d4ed8, #60a5fa); }
+.green  { background: linear-gradient(135deg, #10b981, #5eead4); }
+.purple { background: linear-gradient(135deg, #7c3aed, #c4b5fd); }
+.orange { background: linear-gradient(135deg, #f97316, #fdba74); }
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.box h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text{
+  background-color: #f3f6fd;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+small {
+  color: #6b7694;
+  display: block;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e8ecf5;
+}
+
+.row.header {
+  color: #6b7694;
+  font-size: 17px;
+}
+
+.status {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  justify-self: start;
+}
+
+.pending   { background: #fef3c7; color: #d97706; }
+.shipped   { background: #d1fae5; color: #059669; }
+.delivered { background: #dbeafe; color: #2563eb; }
+
+.product {
+  margin-bottom: 18px;
+}
+
+.product p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.bar {
+  background: #e8edf9;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    padding: 12px;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+
+  .menu a {
+    white-space: nowrap;
+  }
+
+  .upgrade-box {
+    display: none;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    overflow-x: auto;
+  }
+  
+  .row {
+    min-width: 450px;
+  }
+}

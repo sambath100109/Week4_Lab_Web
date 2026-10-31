@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopDash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+      <h2 class="logo">🛒 ShopDash</h2>
+
+      <div class="menu">
+        <p href="#" class="active">🏠 Dashboard</p>
+        <p href="#">📦 Orders</p>
+        <p href="#">🏷️ Products</p>
+        <p href="#">👥 Customers</p>
+        <p href="#">📊 Analytics</p>
+        <p href="#">⚙️ Settings</p>
+      </div>
+
+      <div class="upgrade-box">
+        <p>🚀</p>
+        <b>Upgrade to Pro</b>
+        <p>Get more features!</p>
+        <button>Upgrade</button>
+      </div>
+    </aside>
+
+    <main class="content">
+
+      <div class="topbar">
+        <input type="text" placeholder="Search...">
+        <div class="user">
+          <span>🔔</span>
+          <span>👨🏻‍🎓 Chin</span>
+        </div>
+      </div>
+
+      <h1>Welcome back, Chin!</h1>
+      <p>Here’s what’s happening with your store today.</p>
+
+      <div class="cards">
+        <div class="card blue">
+          <p class="icon">🛒</p>
+          <h3>1,248</h3>
+          <p>Total Orders ⬆ 12%</p>
+        </div>
+        <div class="card green">
+          <p class="icon">💲</p>
+          <h3>$24,780</h3>
+          <p>Total Revenue ⬆ 18%</p>
+        </div>
+        <div class="card purple">
+          <p class="icon">👥</p>
+          <h3>892</h3>
+          <p>New Customers ⬆ 10%</p>
+        </div>
+        <div class="card orange">
+          <p class="icon">📦</p>
+          <h3>48</h3>
+          <p>Pending Orders ⬆ 5%</p>
+        </div>
+      </div>
+
+      <div class="two-columns">
+
+        <div class="box">
+          <h2>📊 Sales Overview</h2>
+
+          <svg viewBox="0 0 700 250" class="chart">
+            <polyline
+              points="40,170 140,150 240,90 340,140 440,110 540,100 640,40"
+              fill="none" stroke="#2563eb" stroke-width="3" />
+
+            <text x="30"  y="240">Mon</text>
+            <text x="130" y="240">Tue</text>
+            <text x="230" y="240">Wed</text>
+            <text x="330" y="240">Thu</text>
+            <text x="440" y="240">Fri</text>
+            <text x="530" y="240">Sat</text>
+            <text x="630" y="240">Sun</text>
+            <circle cx="40"  cy="170" r="6" fill="#2563eb" />
+            <circle cx="140" cy="150" r="6" fill="#2563eb" />
+            <circle cx="240" cy="90"  r="6" fill="#2563eb" />
+            <circle cx="340" cy="140" r="6" fill="#2563eb" />
+            <circle cx="440" cy="110" r="6" fill="#2563eb" />
+            <circle cx="540" cy="100"  r="6" fill="#2563eb" />
+            <circle cx="640" cy="40"  r="6" fill="#2563eb" />
+
+            <text x="0" y="50">15k</text>
+            <text x="0" y="100">10k</text>
+            <text x="0" y="150">5k</text>
+            <text x="0" y="200">0</text>
+          </svg>
+        </div>
+
+        <div class="box">
+          <h2>⚡ Recent Activity</h2>
+          <div class="activity">
+            <div class="text">
+              <p>🛒 New order #1048 <small>2 min ago</small></p></div>
+            <div class="text">
+              <p>👤 New customer joined <small>5 min ago</small></p></div>
+            <div class="text">
+              <p>📦 Order #1047 shipped <small>10 min ago</small></p></div>
+            <div class="text">
+              <p>💳 Payment received: $120 <small>15 min ago</small></p></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="two-columns">
+
+        <div class="box">
+          <h2>📦 Recent Orders</h2>
+
+          <div class="row header">
+            <span>Order ID</span>
+            <span>Customer</span>
+            <span>Amount</span>
+            <span>Status</span>
+          </div>
+          <div class="row">
+            <span>#1048</span>
+            <span>Sokha Dara</span>
+            <span>$120.00</span>
+            <span class="status pending">Pending</span>
+          </div>
+          <div class="row">
+            <span>#1047</span>
+            <span>Chenda Phally</span>
+            <span>$75.50</span>
+            <span class="status shipped">Shipped</span>
+          </div>
+          <div class="row">
+            <span>#1046</span>
+            <span>Rothana Sin</span>
+            <span>$200.00</span>
+            <span class="status delivered">Delivered</span>
+          </div>
+          <div class="row">
+            <span>#1045</span>
+            <span>Vannary Kim</span>
+            <span>$95.00</span>
+            <span class="status delivered">Delivered</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>⭐ Top Products</h2>
+
+          <div class="product">
+            <p>👟 Nike Air Max <small>1,200 sold</small></p>
+            <div class="bar">
+              <div class="fill" style="width: 90%; background: #2563eb;"></div>
+            </div>
+          </div>
+          <div class="product">
+            <p>🎧 Wireless Headphones <small>950 sold</small></p>
+            <div class="bar">
+              <div class="fill" style="width: 70%; background: #7c3aed;"></div>
+            </div>
+          </div>
+          <div class="product">
+            <p>🎒 Travel Backpack <small>720 sold</small></p>
+            <div class="bar">
+              <div class="fill" style="width: 50%; background: #10b981;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
